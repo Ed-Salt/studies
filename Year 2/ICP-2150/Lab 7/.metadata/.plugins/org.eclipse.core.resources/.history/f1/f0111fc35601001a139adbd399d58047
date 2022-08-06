@@ -1,0 +1,12 @@
+
+public class CounterThread {
+
+	private Counter counter;
+	private int num;
+	
+	public CounterThread(Counter c, int n)
+	{
+		counter = c;
+		num = n;
+	}
+}

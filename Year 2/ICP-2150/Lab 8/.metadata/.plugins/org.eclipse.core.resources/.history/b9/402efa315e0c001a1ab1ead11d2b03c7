@@ -1,0 +1,8 @@
+
+public class ColoredBall extends JComponent {
+
+	public ColoredBall(int x, int y) {
+
+	}
+
+}

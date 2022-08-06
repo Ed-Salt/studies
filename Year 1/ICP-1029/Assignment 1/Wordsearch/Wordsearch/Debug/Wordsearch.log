@@ -1,0 +1,9 @@
+﻿  Wordsearch.cpp
+c:\users\salte\documents\cs\icp-1029\assignment 1\wordsearch\wordsearch\wordsearch.cpp(49): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\salte\documents\cs\icp-1029\assignment 1\wordsearch\wordsearch\wordsearch.cpp(344): warning C4018: '<': signed/unsigned mismatch
+c:\users\salte\documents\cs\icp-1029\assignment 1\wordsearch\wordsearch\wordsearch.cpp(350): warning C4018: '>=': signed/unsigned mismatch
+c:\users\salte\documents\cs\icp-1029\assignment 1\wordsearch\wordsearch\wordsearch.cpp(365): warning C4018: '<': signed/unsigned mismatch
+c:\users\salte\documents\cs\icp-1029\assignment 1\wordsearch\wordsearch\wordsearch.cpp(371): warning C4018: '>=': signed/unsigned mismatch
+c:\users\salte\documents\cs\icp-1029\assignment 1\wordsearch\wordsearch\wordsearch.cpp(387): warning C4018: '<': signed/unsigned mismatch
+c:\users\salte\documents\cs\icp-1029\assignment 1\wordsearch\wordsearch\wordsearch.cpp(404): warning C4018: '>=': signed/unsigned mismatch
+  Wordsearch.vcxproj -> C:\Users\salte\Documents\CS\ICP-1029\Assignment 1\Wordsearch\Debug\Wordsearch.exe

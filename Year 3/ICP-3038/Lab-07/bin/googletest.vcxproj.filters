@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\999b3af427feaa9e86a7faec80ac5022\googletest-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\999b3af427feaa9e86a7faec80ac5022\googletest-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\999b3af427feaa9e86a7faec80ac5022\googletest-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\999b3af427feaa9e86a7faec80ac5022\googletest-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\999b3af427feaa9e86a7faec80ac5022\googletest-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\999b3af427feaa9e86a7faec80ac5022\googletest-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\999b3af427feaa9e86a7faec80ac5022\googletest-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\19e1c5f97c8627de03b163d73aceb9fe\googletest-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\d2e2eaccc5f0508909271bfb5c55db6e\googletest.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="G:\Documents\CS\ICP-3038\Lab-07\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\googletest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{EE0AF7DD-4B73-36BF-9C24-D40ABAB8105A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

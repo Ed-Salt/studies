@@ -1,0 +1,33 @@
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class BallsFrame extends JFrame
+{
+	private ColoredBallPanel coloredBallPanel;
+	private final int FRAME_WIDTH = 600;
+	private final int FRAME_HEIGHT = 500;
+
+	public BallsFrame() {
+		this.getContentPane().setPreferredSize(new Dimension(FRAME_WIDTH, FRAME_HEIGHT));
+		
+		coloredBallPanel = new ColoredBallPanel();
+		this.add(coloredBallPanel, BorderLayout.CENTER);
+		addBall(160, 200); // add two balls to panel
+		addBall(480, 200);
+	}
+
+	// addBall to panel at specified coordinates (x,y)
+	public void addBall(int x, int y)
+	{
+		// create coloured ball and add to panel
+		ColoredBall ball = new ColoredBall(x, y);
+		coloredBallPanel.add(ball);
+		
+		//create a runnable to control ball
+		Runnable r =
+				new ColoredBallRunnable(ball, coloredBallPanel);
+		Thread t = new Thread(r);
+		t.start();
+	}
+} 

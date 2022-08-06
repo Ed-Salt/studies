@@ -1,0 +1,24 @@
+import java.awt.*;
+import java.awt.geom.Ellipse2D;
+import javax.swing.*;
+
+public class DiceComponent extends JComponent{
+	
+	private int first = 6;
+	private int second = 6;
+	
+	public DiceComponent(int f, int s) {
+		first = f;
+		second = s;
+	}
+	
+	public void paintComponent(Graphics g)
+    {  
+      Graphics2D g2 = (Graphics2D) g;
+      DiceFace die1 = new DiceFace(160, 100, 80, 6);
+      DiceFace die2 = new DiceFace(160, 444, 80, 6);
+      die1.draw(g2);
+      die2.draw(g2);
+    }
+
+}

@@ -1,0 +1,8 @@
+G:/Documents/CS/ICP-3038/Lab-10/bin/CMakeFiles/displayImage.dir
+G:/Documents/CS/ICP-3038/Lab-10/bin/CMakeFiles/logScale.dir
+G:/Documents/CS/ICP-3038/Lab-10/bin/CMakeFiles/rgb2grey.dir
+G:/Documents/CS/ICP-3038/Lab-10/bin/CMakeFiles/meanFilter.dir
+G:/Documents/CS/ICP-3038/Lab-10/bin/CMakeFiles/medianFilter.dir
+G:/Documents/CS/ICP-3038/Lab-10/bin/CMakeFiles/gaussianFilter.dir
+G:/Documents/CS/ICP-3038/Lab-10/bin/CMakeFiles/ALL_BUILD.dir
+G:/Documents/CS/ICP-3038/Lab-10/bin/CMakeFiles/ZERO_CHECK.dir

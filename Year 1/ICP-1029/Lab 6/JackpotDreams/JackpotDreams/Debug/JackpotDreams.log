@@ -1,0 +1,4 @@
+﻿  pch.cpp
+  JackpotDreams.cpp
+c:\users\salte\documents\cs\icp-1029\lab 6\jackpotdreams\jackpotdreams\jackpotdreams.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  JackpotDreams.vcxproj -> C:\Users\salte\Documents\CS\ICP-1029\Lab 6\JackpotDreams\Debug\JackpotDreams.exe

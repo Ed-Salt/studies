@@ -1,0 +1,138 @@
+package projectAG;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.sql.SQLException;
+import java.util.LinkedList;
+import java.util.List;
+
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+public class NounServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private List<String> nouns;
+	private DatabaseManager db;
+	private boolean fail = false;
+
+    public NounServlet() throws IOException, ClassNotFoundException, SQLException {
+		db = new DatabaseManager();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		//prints page with table containg all nouns present in the sql database
+		PrintWriter pw = response.getWriter();
+		pw.append("<html><head><title>Noun List</title>"
+				+ "<style>"
+				+ "table, th, td {"
+				+ "	 border: 1px solid black;"
+				+ "  border-collapse: collapse;"
+				+ "  text-align: left;" 
+				+ "}"
+				+ "tr:nth-child(even) {"
+				+ "  background-color: #eee;" 
+				+ "}"
+				+ "tr:nth-child(odd) {" 
+				+ " background-color: #fff;" 
+				+ "}"
+				+ "</style>"
+				+ "</head><body>");
+		pw.append("<form action=\"EditorServlet\" method=\"get\">");
+		
+		pw.append("<h1>List of Welsh Nouns</h1>");
+		
+		if (fail) {
+			pw.append("<p>Failed to update noun</p>");
+			fail = false;
+		}
+		//String format = "%-22s%-22s%-11s";
+		/*
+		nouns = new LinkedList<String>();
+		String filename = "/WEB-INF/nouns.txt";		
+		ServletContext context = getServletContext();
+		InputStream is = context.getResourceAsStream(filename);
+		if (is != null) {
+			InputStreamReader isr = new InputStreamReader(is);
+			BufferedReader reader = new BufferedReader(isr);
+			String text;
+			while ((text = reader.readLine()) != null) {
+				nouns.add(text);
+			}
+		}
+		*/
+		
+		try {
+			nouns = db.getTable();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		pw.append("<table style=\"width:600px\">" + 
+				"  <tr>" + 
+				"    <th>Welsh</th>" + 
+				"    <th>English</th>" + 
+				"    <th>Gender</th>" + 
+				"	 <th><button name=\"edit\" type=\"submit\" value=\"ADD\">Add</button></th>" + 
+				"  </tr>");
+		
+		for (int i = 0; i < nouns.size(); i++) {
+			String[] entries = nouns.get(i).split("; ");
+
+			pw.append(
+					"  <tr>" + 
+					"    <td>" +entries[0]+ "</td>" + 
+					"    <td>" +entries[1]+ "</td>" + 
+					"    <td>" +entries[2]+ "</td>" + 
+					"	 <td>" +
+					"      <button name=\"edit\" " +
+					"        type=\"submit\" " +
+					"        value=\""+entries[0]+"\">Edit" +
+					"      </button>" +
+					"    </td>" +
+					"  </tr>");
+		}
+		pw.append("</table>");
+
+		pw.append("</form>");
+		
+		pw.append("<br/><br/>"
+				+ "<form action=\"Welcome.html\">"
+				+ "<input type=\"submit\" value=\"Back\"/></form>");
+		
+		pw.append("</body></html>");
+	}
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String action = request.getParameter("action");
+		String noun = request.getParameter("noun");
+		String translation = request.getParameter("translation");
+		String gender = request.getParameter("gender");
+		if (!noun.equals("") && !translation.equals("")) {
+			if (action.equals("add")) {
+			
+			} else if (action.equals("update")) {
+				try {
+					db.updateEntry(noun, translation, gender);
+				} catch (SQLException e) {
+				}
+			} else { //delete
+			
+			}
+			try {
+				nouns = db.getTable();
+			} catch (SQLException e) {
+			}
+		} else {
+			fail = true;
+		}
+		doGet(request, response);
+	}
+
+}

@@ -1,0 +1,3 @@
+G:/Documents/CS/ICP-3038/Lab-12/bin/CMakeFiles/MotionDetection.dir
+G:/Documents/CS/ICP-3038/Lab-12/bin/CMakeFiles/ALL_BUILD.dir
+G:/Documents/CS/ICP-3038/Lab-12/bin/CMakeFiles/ZERO_CHECK.dir

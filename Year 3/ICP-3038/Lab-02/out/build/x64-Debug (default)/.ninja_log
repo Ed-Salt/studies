@@ -1,0 +1,15 @@
+# ninja log v5
+1	75	623769704	CMakeFiles/lab2-1-C.dir/lab2-1.c.obj	af642c3713309aa9
+75	577	623769705	lab2-1-C.exe	4c6fc325d884f0c8
+1	410	623770216	CMakeFiles/lab2-1-CXX.dir/lab2-1.cxx.obj	56fefcdafb1ef009
+410	814	623770216	lab2-1-CXX.exe	6a1c6bd05129612e
+0	75	623770471	CMakeFiles/lab2-2-C.dir/lab2-2.c.obj	57c194bb35c9dd93
+75	466	623770471	lab2-2-C.exe	7421d81b3eb86085
+1	426	623770865	CMakeFiles/lab2-2-CXX.dir/lab2-2.cxx.obj	82a2019312e4a62
+427	834	623770866	lab2-2-CXX.exe	5a499c09bb4ada0c
+8	77	623771221	CMakeFiles/lab2-2-C.dir/lab2-2.c.obj	57c194bb35c9dd93
+78	294	623771221	lab2-2-C.exe	7421d81b3eb86085
+0	474	623771221	CMakeFiles/lab2-2-CXX.dir/lab2-2.cxx.obj	82a2019312e4a62
+475	745	623771222	lab2-2-CXX.exe	5a499c09bb4ada0c
+1	410	623771763	CMakeFiles/lab2-3.dir/lab2-3.cxx.obj	726be2010ef6bca3
+410	815	623771763	lab2-3.exe	744cae7956da1d0e

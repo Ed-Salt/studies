@@ -1,0 +1,21 @@
+import java.io.IOException;
+import java.sql.SQLException;
+
+public class DatabaseMain {
+
+	public static void main(String[] args) throws IOException, SQLException, ClassNotFoundException, IOException {
+		int input = -1;
+		DatabaseTextInterface database = new DatabaseTextInterface();
+		while (input != 0) {
+			database.printMenu();
+			input = database.getMenuInput(input);
+			if (input != 0) {
+				database.printSubMenu();
+				input = database.getSubMenuInput(input);
+				database.doChoice(input);
+				input = -1;
+			}
+		}
+	}
+
+}

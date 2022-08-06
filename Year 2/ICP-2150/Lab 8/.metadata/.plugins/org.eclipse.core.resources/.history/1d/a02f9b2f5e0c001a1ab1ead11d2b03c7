@@ -1,0 +1,8 @@
+
+public class ColoredBall {
+
+	public ColoredBall(int x, int y) {
+
+	}
+
+}

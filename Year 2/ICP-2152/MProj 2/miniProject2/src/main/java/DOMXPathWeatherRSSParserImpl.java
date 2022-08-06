@@ -1,0 +1,85 @@
+import java.net.URL;
+import java.util.Date;
+import java.util.List;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathFactory;
+
+import org.w3c.dom.Document;
+
+public class DOMXPathWeatherRSSParserImpl implements WeatherRSSParser {
+
+	private String geoId = "2656397";
+	private String URL_TO_READ = "https://weather-broker-cdn.api.bbci.co.uk/en/observation/rss/" + geoId;
+	private static final DocumentBuilderFactory FACTORY = DocumentBuilderFactory.newInstance();
+	private DocumentBuilder builder;
+	private static final XPathFactory PATH_FACTORY = XPathFactory.newInstance();
+	private XPath path;
+	private Document document;
+	
+	public DOMXPathWeatherRSSParserImpl() {
+		try {
+			builder = FACTORY.newDocumentBuilder();
+		} catch (ParserConfigurationException e) {
+			throw new IllegalStateException("Unable to create DocumentBuilder.");
+		}
+		path = PATH_FACTORY.newXPath();
+	}
+	
+	public String getHeadlines() throws IllegalArgumentException {
+		try {
+			document = builder.parse(new URL(URL_TO_READ).openStream());
+			return path.evaluate("/rss/channel/item/title", document);
+		} catch (Exception e) {
+			throw new IllegalArgumentException("Unable to read from news site.");
+		}
+	}
+	
+	@Override
+	public String getGeoId(String location) throws IllegalArgumentException {
+		try {
+			Document doc = builder.parse(new URL(
+					"http://api.geonames.org/search?q=" + location +
+					"&maxRows=1&lang=en&username=dns18cch"
+					).openStream());
+			return path.evaluate("/geonames/geoname/geonameId", doc);
+		} catch (Exception e) {
+			throw new IllegalArgumentException("Error 404 - Location not found");
+		}		
+	}
+	
+	@Override
+	public String[][] getDescription() throws IllegalArgumentException {
+		try {
+			String[] arr1d = path.evaluate("/rss/channel/item/description", document).split(", ");
+			String[][] arr2d = new String[arr1d.length-1][2];
+			int count = 0;
+			for (String string : arr1d) {
+				if (count == 5) {
+					arr2d[count-1][1] += " (" + string + ")";
+				} else if (count == 6) {
+					arr2d[count-1] = string.split(": ");
+				} else {
+					arr2d[count] = string.split(": ");
+				}
+				count++;
+			}
+			return arr2d;
+		} catch (Exception e) {
+			throw new IllegalArgumentException("Unable to read from news site.");
+		}
+	}
+
+	public List<Date> getDates() {
+		return null;
+	}
+
+	public void setURL(String nURL) {
+		URL_TO_READ = 
+				"https://weather-broker-cdn.api.bbci.co.uk/en/observation/rss/" + nURL;
+	}
+
+}

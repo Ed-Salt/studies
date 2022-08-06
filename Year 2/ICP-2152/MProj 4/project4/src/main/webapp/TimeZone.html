@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Where's the time?</title>
+<style>
+form label{
+display: inline-block;
+width: 100px;
+}
+</style>
+
+</head>
+<body>
+<form action="TimeZoneServlet" method="post">
+<h1>Zoning Time</h1>
+<p>Input the name of the city for the time you want</p>
+<label for="city">City:</label>    
+<input type="text" name="city" /><br/><br/>
+<input type="submit" value="Get time"/>
+</form>
+</body>
+</html>

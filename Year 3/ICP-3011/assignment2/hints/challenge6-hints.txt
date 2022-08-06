@@ -1,0 +1,5 @@
+Hint 1
+Look at all the files installed with Gruyere. Are there any files that shouldn’t be there?
+
+Hint 2
+Look for a .gtl file that isn’t referenced anywhere.

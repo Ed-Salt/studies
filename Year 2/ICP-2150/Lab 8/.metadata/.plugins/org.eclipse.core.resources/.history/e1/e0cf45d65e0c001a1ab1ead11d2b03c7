@@ -1,0 +1,39 @@
+import java.awt.*;
+import java.awt.geom.Ellipse2D;
+import javax.swing.*;
+
+public class BallThreads extends JComponent {
+/*
+	public static int width = 360;
+	public static int height = 120;
+	public static int size = 40;
+	
+	final static int DELAY = 10;
+	public static Ellipse2D.Double ball1 = 
+			new Ellipse2D.Double(80, 50, size, size);
+	public static Ellipse2D.Double ball2 = 
+			new Ellipse2D.Double(240, 50, size, size);
+	public static JFrame frame = new JFrame();
+*/
+    public void paint(Graphics g) {
+        Graphics2D g2 = (Graphics2D) g;
+
+        g2.setPaint(Color.BLUE);
+        g2.setStroke(new BasicStroke(5.0f));
+        g2.fill(ball1);
+
+        g2.setPaint(Color.RED);
+        g2.fill(ball2);
+    }
+	
+	public static void main(String[] args) {
+		/*frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        frame.getContentPane().add(new BallThreads());
+		frame.getContentPane().setPreferredSize(new Dimension(width, height));
+		frame.pack();
+		frame.setVisible(true);*/
+		BallsFrame ballFrame = new BallsFrame();
+		ballFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+	}
+
+}

@@ -1,0 +1,9 @@
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-build/CMakeFiles/INSTALL.dir
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-build/CMakeFiles/RUN_TESTS.dir
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-build/CMakeFiles/ALL_BUILD.dir
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-build/CMakeFiles/ZERO_CHECK.dir
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-build/googletest/CMakeFiles/gtest.dir
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-build/googletest/CMakeFiles/gtest_main.dir
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-build/googletest/CMakeFiles/INSTALL.dir
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-build/googletest/CMakeFiles/RUN_TESTS.dir
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-build/googletest/CMakeFiles/ALL_BUILD.dir

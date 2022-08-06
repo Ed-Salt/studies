@@ -1,0 +1,13 @@
+# Target labels
+ googletest
+# Source files and their labels
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/googletest
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/9d9785aa027dfdf6b7254dcb390998a2/googletest.rule
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/7e8d840c7374181f438b1c9edcd47808/googletest-complete.rule
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/2bad882b045de43bc9e4522322c13aee/googletest-install.rule
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/2bad882b045de43bc9e4522322c13aee/googletest-mkdir.rule
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/2bad882b045de43bc9e4522322c13aee/googletest-download.rule
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/2bad882b045de43bc9e4522322c13aee/googletest-update.rule
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/2bad882b045de43bc9e4522322c13aee/googletest-patch.rule
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/2bad882b045de43bc9e4522322c13aee/googletest-configure.rule
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/2bad882b045de43bc9e4522322c13aee/googletest-build.rule

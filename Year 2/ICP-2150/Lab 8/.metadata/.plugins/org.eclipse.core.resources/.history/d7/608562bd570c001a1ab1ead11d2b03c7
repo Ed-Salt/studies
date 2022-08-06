@@ -1,0 +1,18 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+class TimerListener implements ActionListener {
+	
+	public void actionPerformed(ActionEvent event)
+	{
+		// Insert code to be executed on each timer
+		// event (e.g. move a shape 1 pixel to right)
+		int pixelAdjust = 1;
+		double xPos = AnimatedBall.ball.x + pixelAdjust;
+		if (xPos > AnimatedBall.frame.getContentPane().getWidth() + pixelAdjust) {
+			xPos = 1 - AnimatedBall.ball.width;
+		}
+		AnimatedBall.ball.x = xPos;
+		AnimatedBall.frame.repaint();
+	}
+}

@@ -1,0 +1,31 @@
+import java.awt.*;
+import java.awt.geom.Ellipse2D;
+
+import javax.swing.*;
+
+public class AnimatedBall extends JComponent {
+	
+	final static int DELAY = 200;
+	public Ellipse2D.Double ball = new Ellipse2D.Double(10, 10, 40, 40);
+
+	
+    public void paint(Graphics g) {
+        Graphics2D g2 = (Graphics2D) g;
+
+        g2.setPaint(Color.RED);
+        g2.setStroke(new BasicStroke(5.0f));
+        g2.draw(ball);
+    }
+	
+	public static void main(String[] args) {
+		// Create listener and attach it to the timer
+		TimerListener listener = new TimerListener();
+		Timer t = new Timer(DELAY, listener);
+		// Start timer running
+		t.start();
+		JFrame frame = new JFrame();
+		frame.getContentPane().setPreferredSize(new Dimension(600,400));
+		frame.pack();
+		frame.setVisible(true);
+	}
+}

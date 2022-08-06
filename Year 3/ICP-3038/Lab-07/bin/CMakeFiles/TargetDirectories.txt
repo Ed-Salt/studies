@@ -1,0 +1,16 @@
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/test-load-save.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/googletest.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/display.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/test-constructors.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/test-operators.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/contrastEnhancement.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/negative.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/laplacianFilter.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/gaussianFilter.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/blending.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/boxFilter.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/gradientMagnitude.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/RUN_TESTS.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/sharpen.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/ALL_BUILD.dir
+G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/ZERO_CHECK.dir

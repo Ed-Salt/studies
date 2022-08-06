@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>OrderForm</title>
+<style>
+form label{
+display: inline-block;
+width: 100px;
+}
+</style>
+
+</head>
+<body>
+<form action="OrderFormServlet" method="post">
+<h1>XYZ Computers: Order Form</h1>
+<label for="desc">Description:</label>    
+<input type="text" name="desc" /><br />
+<label for="code">Code:</label>           
+<input type="text" name="code" /><br />
+<label for="quant">Quantity:</label>       
+<input type="number" name="quant" /><br /><br />
+Delivery:       <br/>
+<input type="radio" name="deliv" value="Same Day" /> Same Day <br />
+<input type="radio" name="deliv" value="Express" /> Express <br />
+<input type="radio" name="deliv" value="Standard" /> Standard <br />
+<label for="cid">Customer_Id:</label>    
+<input type="password" name="cid" /><br /><br />
+<input type="submit" value="Place Order"/>
+<input type="reset" value="Cancel"/>
+</form>
+</body>
+</html>

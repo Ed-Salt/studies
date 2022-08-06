@@ -1,0 +1,85 @@
+
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class CommandLineInterface {
+
+	public static void main(String[] args) throws IOException, SQLException, ClassNotFoundException, IOException {
+		int input = -1;
+		while (input != 0) {
+			System.out.println("\nMain Menu"
+				+ "\n********************"
+				+ "\n1. List student"
+				+ "\n2. List staff"
+				+ "\n3. List modules"
+				+ "\n4. List registrations"
+				+ "\n5. List courses taught by staff"
+				+ "\n6. Add student"
+				+ "\n7. Delete student"
+				+ "\n8. Update student"
+				+ "\n9. Reports"
+				+ "\n0. Quit");
+			Scanner in = new Scanner(System.in);
+			System.out.print("\n:> ");
+			input = in.nextInt();
+			System.out.println();
+			InputStream stream =
+					CommandLineInterface.class.getResourceAsStream("/database.properties");
+			SimpleDataSource.init(stream);
+			Connection conn = SimpleDataSource.getConnection();
+			Statement st = conn.createStatement();
+			int list = 0;
+			ResultSet rs = null;
+			switch(input) {
+			case 1:
+				rs = st.executeQuery("SELECT * FROM student");
+				while(rs.next()) {
+					System.out.println(String.format("%10s,%30s,%8s",  rs.getString(1), rs.getString(2), rs.getString(3)));
+				}
+				list = 3;
+				break;
+			case 2:
+				rs = st.executeQuery("SELECT * FROM staff");
+				list = 3;
+				break;
+			case 3:
+				rs = st.executeQuery("SELECT * FROM module");
+				list = 3;
+				break;
+			case 4:
+				rs = st.executeQuery("SELECT * FROM registered");
+				list = 2;
+				break;
+			case 5:
+				rs = st.executeQuery("SELECT * FROM teaches");
+				list = 2;
+				break;
+			case 6:
+				
+				break;
+			case 7:
+				
+				break;
+			case 8:
+				
+				break;
+			case 9:
+				
+				break;
+			default:
+				break;
+			}
+			if (input != 0) {
+				System.out.print("\nPress 'Enter' to continue...");
+				System.in.read();
+			}
+		}
+	}
+
+}

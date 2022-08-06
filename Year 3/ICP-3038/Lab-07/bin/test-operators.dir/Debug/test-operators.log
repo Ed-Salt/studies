@@ -1,0 +1,31 @@
+﻿  Image.cxx
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(305,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(353,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(456,87): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(821,91): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(833,15): warning C4244: 'initializing': conversion from 'const size_t' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(834,15): warning C4244: 'initializing': conversion from 'const size_t' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(853,15): warning C4244: 'initializing': conversion from 'const size_t' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(854,15): warning C4244: 'initializing': conversion from 'const size_t' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(862,106): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(862,103): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(862,154): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(862,151): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(878,35): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(879,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(880,30): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(881,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(894,35): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(897,47): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(903,35): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(906,47): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(908,40): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(908,36): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(908,61): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(911,36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(1064,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  test-operators.cxx
+G:\Documents\CS\ICP-3038\Lab-07\src\test-operators.cxx(28,13): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\test-operators.cxx(29,13): warning C4244: 'argument': conversion from 'size_t' to 'double', possible loss of data
+  Generating Code...
+  test-operators.vcxproj -> G:\Documents\CS\ICP-3038\Lab-07\bin\Debug\test-operators.exe

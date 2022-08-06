@@ -1,0 +1,28 @@
+/*
+	Java Dice Game - Lab 4
+	Edward Salt - dns18cch
+
+*/
+import java.util.Random;
+
+public class Dice
+{
+     private Random generator;
+     private int sides;
+     private int value;
+
+     public Dice(int noSides)
+     {
+         generator = new Random(); 
+		 sides = noSides; //max roll
+		 value = sides;
+     }
+
+     public int throwDice()
+     {        
+    	 //rolls dice randomly between 1 & 6
+         value = 1 + generator.nextInt(sides);
+			return value;
+     }
+          
+}

@@ -1,0 +1,6 @@
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/googletest.dir
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/test-constructors.dir
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/test-operators.dir
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/RUN_TESTS.dir
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/ALL_BUILD.dir
+G:/Documents/CS/ICP-3038/Lab-1-6/bin/CMakeFiles/ZERO_CHECK.dir

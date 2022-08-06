@@ -1,0 +1,9 @@
+
+public class DOMXMLParserImpl implements XMLParser {
+	
+	@Override
+	public List<Employee> parse(InputStream in) {
+		
+	}
+
+}

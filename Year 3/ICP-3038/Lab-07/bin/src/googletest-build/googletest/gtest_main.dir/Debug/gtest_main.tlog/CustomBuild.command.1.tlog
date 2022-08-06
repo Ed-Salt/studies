@@ -1,0 +1,10 @@
+^G:\DOCUMENTS\CS\ICP-3038\LAB-07\BIN\SRC\GOOGLETEST\GOOGLETEST\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Documents/CS/ICP-3038/Lab-07/bin/src/googletest -BG:/Documents/CS/ICP-3038/Lab-07/bin/src/googletest-build --check-stamp-file G:/Documents/CS/ICP-3038/Lab-07/bin/src/googletest-build/googletest/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

@@ -1,0 +1,8 @@
+
+public class ColoredBallRunnable implements Runnable {
+
+	public void run() {
+
+	}
+
+}

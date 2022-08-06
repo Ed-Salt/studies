@@ -1,0 +1,20 @@
+MS-DOS Commands
+***************
+List of some common DOS commands and what they do:
+
+M: -- select M: as the current drive
+DIR -- list the current directory
+DIR directory -- list the specified directory
+CLS -- clear the screen
+CD directory -- change current directory to directory
+TYPE file -- display specified file on the screen
+COPY file1 file2 -- copy the first file to the second
+COPY file directory -- copy the file to the specified directory
+DEL file -- delete the specified file
+EDIT file -- edit the specified file
+PATH -- displays path settings
+REN file newname -- rename file to newname
+FORMAT drive -- format the disk in the specified drive
+MD directory -- make a new directory called directory
+RD directory -- remove the specified directory
+ (which must be empty)

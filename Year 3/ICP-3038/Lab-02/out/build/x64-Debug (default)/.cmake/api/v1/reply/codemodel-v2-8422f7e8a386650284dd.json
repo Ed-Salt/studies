@@ -1,0 +1,95 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ICP3038-lab2",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "lab2-1-C::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab2-1-C-Debug-5328c3df844aa6232f50.json",
+					"name" : "lab2-1-C",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab2-1-CXX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab2-1-CXX-Debug-552415823dc3cb719c99.json",
+					"name" : "lab2-1-CXX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab2-2-C::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab2-2-C-Debug-d5e855b9b19c413def89.json",
+					"name" : "lab2-2-C",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab2-2-CXX::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab2-2-CXX-Debug-1de1658a08fc52ff40e5.json",
+					"name" : "lab2-2-CXX",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lab2-3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lab2-3-Debug-eee469e62942d7200a24.json",
+					"name" : "lab2-3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "G:/Documents/CS/ICP-3038/ICP3038-Lab2/out/build/x64-Debug (default)",
+		"source" : "G:/Documents/CS/ICP-3038/ICP3038-Lab2"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

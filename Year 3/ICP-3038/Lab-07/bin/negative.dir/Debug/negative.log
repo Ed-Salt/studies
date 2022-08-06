@@ -1,0 +1,10 @@
+﻿  Image.cxx
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(352,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(455,87): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  negative.cxx
+  Generating Code...
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(773): warning C4172: returning address of local variable or temporary
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(777): warning C4172: returning address of local variable or temporary
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(781): warning C4172: returning address of local variable or temporary
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(785): warning C4172: returning address of local variable or temporary
+  negative.vcxproj -> G:\Documents\CS\ICP-3038\Lab-07\bin\Debug\negative.exe

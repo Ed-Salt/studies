@@ -1,0 +1,13 @@
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/RUN_TESTS.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/lab2-1-CXX.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/lab2-1-C.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/lab2-2-CXX.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/lab3-3.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/lab2-2-C.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/lab2-3.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/lab3-1.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/lab3-2.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/lab3-4.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/celsius2fahrenheit.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/ALL_BUILD.dir
+G:/Documents/CS/ICP-3038/Lab-03/bin/CMakeFiles/ZERO_CHECK.dir

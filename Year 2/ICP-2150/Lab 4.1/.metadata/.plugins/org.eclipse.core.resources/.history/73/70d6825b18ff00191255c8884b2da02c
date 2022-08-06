@@ -1,0 +1,18 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class DiceComponent extends JComponent{
+	
+	private DiceFace dice;
+		
+	public DiceComponent(DiceFace die) {
+		dice = die;
+	}
+	
+	public void paintComponent(Graphics g)
+    {  
+      Graphics2D g2 = (Graphics2D) g;
+      dice.draw(g2);
+    }
+	
+}

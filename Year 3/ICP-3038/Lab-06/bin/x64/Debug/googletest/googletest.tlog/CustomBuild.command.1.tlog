@@ -1,0 +1,148 @@
+^G:\DOCUMENTS\CS\ICP-3038\LAB-06\BIN\CMAKEFILES\5EFA812F8B2B8032BE5A5BEA389F637A\GOOGLETEST-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory G:/Documents/CS/ICP-3038/Lab-06/bin/third_party
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory G:/Documents/CS/ICP-3038/Lab-06/bin/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory G:/Documents/CS/ICP-3038/Lab-06/bin/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/Debug/googletest-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\DOCUMENTS\CS\ICP-3038\LAB-06\BIN\CMAKEFILES\5EFA812F8B2B8032BE5A5BEA389F637A\GOOGLETEST-DOWNLOAD.RULE
+setlocal
+cd G:\Documents\CS\ICP-3038\Lab-06\bin\src
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/download-googletest.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/verify-googletest.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/extract-googletest.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/Debug/googletest-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\DOCUMENTS\CS\ICP-3038\LAB-06\BIN\CMAKEFILES\5EFA812F8B2B8032BE5A5BEA389F637A\GOOGLETEST-UPDATE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/Debug/googletest-update
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\DOCUMENTS\CS\ICP-3038\LAB-06\BIN\CMAKEFILES\5EFA812F8B2B8032BE5A5BEA389F637A\GOOGLETEST-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/Debug/googletest-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\DOCUMENTS\CS\ICP-3038\LAB-06\BIN\CMAKEFILES\5EFA812F8B2B8032BE5A5BEA389F637A\GOOGLETEST-CONFIGURE.RULE
+setlocal
+cd G:\Documents\CS\ICP-3038\Lab-06\bin\src\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -DBUILD_UTILS:BOOL=OFF -Dgtest_force_shared_crt=ON -Dgtest_disable_pthreads=ON -DBUILD_GTEST=ON -DBUILD_GMOCK=OFF -DBUILD_UTILS=OFF -DCMAKE_INSTALL_PREFIX:PATH=G:/Documents/CS/ICP-3038/Lab-06/bin/third_party "-GVisual Studio 16 2019" "-DCMAKE_GENERATOR_INSTANCE:INTERNAL=C:/Program Files (x86)/Microsoft Visual Studio/2019/Community" G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/Debug/googletest-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\DOCUMENTS\CS\ICP-3038\LAB-06\BIN\CMAKEFILES\5EFA812F8B2B8032BE5A5BEA389F637A\GOOGLETEST-BUILD.RULE
+setlocal
+cd G:\Documents\CS\ICP-3038\Lab-06\bin\src\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/Debug/googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\DOCUMENTS\CS\ICP-3038\LAB-06\BIN\CMAKEFILES\5EFA812F8B2B8032BE5A5BEA389F637A\GOOGLETEST-INSTALL.RULE
+setlocal
+cd G:\Documents\CS\ICP-3038\Lab-06\bin\src\googletest-build
+if %errorlevel% neq 0 goto :cmEnd
+G:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" --build . --config Debug --target install
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/Debug/googletest-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\DOCUMENTS\CS\ICP-3038\LAB-06\BIN\CMAKEFILES\BA702C388224E676543DD2C527361758\GOOGLETEST-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/Debug/googletest-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest-stamp/Debug/googletest-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\DOCUMENTS\CS\ICP-3038\LAB-06\BIN\CMAKEFILES\96AA90326DE4C9B6A24E9BB77AE4057A\GOOGLETEST.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^G:\DOCUMENTS\CS\ICP-3038\LAB-06\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Documents/CS/ICP-3038/Lab-06 -BG:/Documents/CS/ICP-3038/Lab-06/bin --check-stamp-file G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

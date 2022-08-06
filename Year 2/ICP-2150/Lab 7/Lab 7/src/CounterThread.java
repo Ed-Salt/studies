@@ -1,0 +1,19 @@
+
+public class CounterThread {
+
+	private Counter counter;
+	private int num;
+	
+	public CounterThread(Counter c, int n)
+	{
+		counter = c;
+		num = n;
+	}
+	
+	public void start() {
+		for (int i = 0; i < num; i++) {
+			counter.count();
+		}
+	}
+	
+}

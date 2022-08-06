@@ -1,0 +1,15 @@
+﻿  gaussianFilter.cxx
+G:\Documents\CS\ICP-3038\Lab-10\gaussianFilter.cxx(18,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+G:\Documents\CS\ICP-3038\Lab-10\gaussianFilter.cxx(130,28): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-10\gaussianFilter.cxx(131,29): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-10\gaussianFilter.cxx(134,44): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+G:\Documents\CS\ICP-3038\Lab-10\gaussianFilter.cxx(134,30): warning C4244: 'argument': conversion from 'float' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+  gaussianFilter.vcxproj -> G:\Documents\CS\ICP-3038\Lab-10\bin\Debug\gaussianFilter.exe

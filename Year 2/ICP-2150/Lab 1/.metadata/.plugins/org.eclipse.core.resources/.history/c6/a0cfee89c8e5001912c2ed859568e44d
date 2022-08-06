@@ -1,0 +1,21 @@
+import java.awt.Color;
+
+import javax.swing.JFrame;
+
+public class EllipseViewer
+{
+   public static void main(String[] args)   
+   {
+	final int FRAME_WIDTH = 400;
+	final int FRAME_HEIGHT = 400;    
+
+	JFrame frame = new JFrame();      	
+	frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);      
+	frame.setTitle("Cirlce");                 	
+	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);    
+	frame.setBackground(Color.BLACK);
+	EllipseComponent component = new EllipseComponent();      	
+	frame.add(component);      
+	frame.setVisible(true);   
+   }
+}

@@ -1,0 +1,10 @@
+^G:\DOCUMENTS\CS\ICP-3038\LAB-10\BIN\CMAKEFILES\78B2B3B74EFEF93A2A64761BEBF6E623\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Documents/CS/ICP-3038/Lab-10 -BG:/Documents/CS/ICP-3038/Lab-10/bin --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file G:/Documents/CS/ICP-3038/Lab-10/bin/ICP3038--Lab10--Intro2OpenCV.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

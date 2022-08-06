@@ -1,0 +1,32 @@
+Hint 1
+What does this URL do? https://google-gruyere.appspot.com/123/invalid
+
+Hint 2
+The most dangerous characters in a URL are < and >. If you can get an application to directly
+insert what you want in a page and can get those characters through, then you can probably
+get a script through. Try these:
+https://google-gruyere.appspot.com/123/%3e%3c
+https://google-gruyere.appspot.com/123/%253e%253c
+https://google-gruyere.appspot.com/123/%c0%be%c0%bc
+https://google-gruyere.appspot.com/123/%26gt;%26lt;
+https://google-gruyere.appspot.com/123/%26amp;gt;%26amp;lt;
+https://google-gruyere.appspot.com/123/\074\x3c\u003c\x3C\u003C\X3C\U003C
+https://google-gruyere.appspot.com/123/+ADw-+AD4-
+This tries > and < in many different ways that might be able to make it through the URL and
+get rendered incorrectly using: verbatim (URL %-encoding), double %-encoding, bad UTF-8
+encoding, HTML &-encoding, double &-encoding, and several different variations on C-style
+encoding. View the resulting source and see if any of those work. (Note: literally typing >< in the
+URL is identical to %3e%3c because the browser automatically %-encodes those characters.
+If you are trying to want a literal > or < then you will need to use a tool like curl to send those
+characters in URL.)
+
+
+Hint 1
+Put this in a snippet and see what you get:
+<script>alert(1)</script>
+There are many different ways that script can be embedded in a document.
+
+Hint 2
+Hackers don’t limit themselves to valid HTML syntax. Try some invalid HTML and see what
+you get. You may need to experiment a bit in order to find something that will work. There are
+multiple ways to do this.

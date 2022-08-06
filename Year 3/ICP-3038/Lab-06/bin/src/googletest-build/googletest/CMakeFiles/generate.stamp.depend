@@ -1,0 +1,12 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.18/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-3.18/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/FindPythonInterp.cmake
+C:/Program Files/CMake/share/cmake-3.18/Modules/WriteBasicConfigVersionFile.cmake
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest/googletest/CMakeLists.txt
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest/googletest/cmake/Config.cmake.in
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest/googletest/cmake/gtest.pc.in
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest/googletest/cmake/gtest_main.pc.in
+G:/Documents/CS/ICP-3038/Lab-06/bin/src/googletest/googletest/cmake/internal_utils.cmake

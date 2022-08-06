@@ -1,0 +1,46 @@
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics2D;
+import java.awt.Rectangle;
+import java.awt.Shape;
+import java.awt.Stroke;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Line2D;
+import java.awt.geom.Point2D;
+import java.awt.geom.Ellipse2D.Double;
+import java.lang.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
+public class Dice
+{
+     private Random generator;
+     private int sides;
+     private int value;
+
+     public Dice(int noSides)
+     {
+         generator = new Random();
+		   sides = noSides;
+         value = 1 + generator.nextInt(sides);
+     }
+
+     public int throwDice()
+     {        
+         value = 1 + generator.nextInt(sides);
+			return value;
+     }
+     
+     public int getValue()
+     {
+          return value;
+     }
+     
+	  // Use for program testing
+	  public void setValue(int v)
+	  {
+		  value = v;
+	  }
+}

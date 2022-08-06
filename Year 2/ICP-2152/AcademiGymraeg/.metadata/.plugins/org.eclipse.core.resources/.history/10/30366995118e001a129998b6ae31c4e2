@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+</head>
+<body>
+<form action="TestServlet" method="post">
+<h1>What's your fact of the day?</h1>
+<input type="submit" value="Get Fact!" />
+</form>
+</body>
+</html>

@@ -1,0 +1,7 @@
+G:/Documents/CS/ICP-3038/ICP3038-Lab2/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
+G:/Documents/CS/ICP-3038/ICP3038-Lab2/out/build/x64-Debug (default)/CMakeFiles/lab2-1-CXX.dir
+G:/Documents/CS/ICP-3038/ICP3038-Lab2/out/build/x64-Debug (default)/CMakeFiles/lab2-1-C.dir
+G:/Documents/CS/ICP-3038/ICP3038-Lab2/out/build/x64-Debug (default)/CMakeFiles/lab2-2-CXX.dir
+G:/Documents/CS/ICP-3038/ICP3038-Lab2/out/build/x64-Debug (default)/CMakeFiles/lab2-2-C.dir
+G:/Documents/CS/ICP-3038/ICP3038-Lab2/out/build/x64-Debug (default)/CMakeFiles/lab2-3.dir
+G:/Documents/CS/ICP-3038/ICP3038-Lab2/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir

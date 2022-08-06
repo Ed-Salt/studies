@@ -1,0 +1,34 @@
+import java.awt.Color;
+import java.awt.Frame;
+import java.awt.Graphics;
+import java.awt.Point;
+import java.util.Random;
+import javax.swing.*;
+
+public class EllipseComponent extends JFrame {
+	
+	public static void main(String[] args) 
+	{
+		JFrame.setDefaultLookAndFeelDecorated(true);
+	    JFrame frame = new JFrame("Draw Oval and Circle");
+	    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	    frame.setBackground(Color.white);
+	    frame.setSize(300, 200);
+	 
+	    JPanel panel = new JPanel();
+	 
+	    frame.add(panel);
+	 
+	    frame.setVisible(true);
+	}
+	
+	public void paintComponent(Graphics g) 
+	{
+		 
+	     // draw oval
+	     g.drawOval(20, 30, 75, 100); 
+	 
+	     // draw circle
+	     g.drawOval(150, 30, 100, 100); 
+	}
+}

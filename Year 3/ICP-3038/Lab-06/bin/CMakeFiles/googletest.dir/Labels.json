@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/googletest"
+		},
+		{
+			"file" : "G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/96aa90326de4c9b6a24e9bb77ae4057a/googletest.rule"
+		},
+		{
+			"file" : "G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/ba702c388224e676543dd2c527361758/googletest-complete.rule"
+		},
+		{
+			"file" : "G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/5efa812f8b2b8032be5a5bea389f637a/googletest-install.rule"
+		},
+		{
+			"file" : "G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/5efa812f8b2b8032be5a5bea389f637a/googletest-mkdir.rule"
+		},
+		{
+			"file" : "G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/5efa812f8b2b8032be5a5bea389f637a/googletest-download.rule"
+		},
+		{
+			"file" : "G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/5efa812f8b2b8032be5a5bea389f637a/googletest-update.rule"
+		},
+		{
+			"file" : "G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/5efa812f8b2b8032be5a5bea389f637a/googletest-patch.rule"
+		},
+		{
+			"file" : "G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/5efa812f8b2b8032be5a5bea389f637a/googletest-configure.rule"
+		},
+		{
+			"file" : "G:/Documents/CS/ICP-3038/Lab-06/bin/CMakeFiles/5efa812f8b2b8032be5a5bea389f637a/googletest-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"googletest"
+		],
+		"name" : "googletest"
+	}
+}

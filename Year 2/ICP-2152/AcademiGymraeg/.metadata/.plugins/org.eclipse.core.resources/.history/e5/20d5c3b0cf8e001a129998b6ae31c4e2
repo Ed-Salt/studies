@@ -1,0 +1,40 @@
+package projectAG;
+
+public class Noun {
+	
+	private String noun;
+	private String translation;
+	private boolean isFeminine;
+
+	public Noun(String noun, String translation, boolean isFeminine) {
+		super();
+		this.noun = noun;
+		this.translation = translation;
+		this.isFeminine = isFeminine;
+	}
+
+	public String getNoun() {
+		return noun;
+	}
+
+	public void setNoun(String noun) {
+		this.noun = noun;
+	}
+
+	public String getTranslation() {
+		return translation;
+	}
+
+	public void setTranslation(String translation) {
+		this.translation = translation;
+	}
+
+	public boolean isFeminine() {
+		return isFeminine;
+	}
+
+	public void setFeminine(boolean isFeminine) {
+		this.isFeminine = isFeminine;
+	}
+	
+}

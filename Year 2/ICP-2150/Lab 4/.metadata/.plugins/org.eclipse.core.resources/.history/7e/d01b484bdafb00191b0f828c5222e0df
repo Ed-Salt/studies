@@ -1,0 +1,37 @@
+import java.awt.Color;
+import java.util.Random;
+
+public class Dice
+{
+     private Random generator;
+     private int sides;
+     private int value;
+
+     public Dice(int noSides)
+     {
+         generator = new Random();
+		 sides = noSides;
+         value = 1 + generator.nextInt(sides);
+         DiceFace die1 = new DiceFace(160, 100, 80, 6, Color.BLACK);
+         DiceFace die2 = new DiceFace(160, 444, 80, 6, Color.RED);
+         die1.draw(g2);
+         die2.draw(g2);
+     }
+
+     public int throwDice()
+     {        
+         value = 1 + generator.nextInt(sides);
+         return value;
+     }
+     
+     public int getValue()
+     {
+          return value;
+     }
+     
+	  // Use for program testing
+	  public void setValue(int v)
+	  {
+		  value = v;
+	  }
+}

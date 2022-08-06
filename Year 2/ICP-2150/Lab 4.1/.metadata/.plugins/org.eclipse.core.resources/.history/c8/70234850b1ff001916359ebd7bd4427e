@@ -1,0 +1,30 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class DiceComponent extends JComponent{
+	
+	private DiceFace die1;
+	private DiceFace die2;
+	private int bal = 50;
+		
+	public DiceComponent(DiceFace d1, DiceFace d2) {
+		die1 = d1;
+		die2 = d2;
+	}
+	
+	public void setBal(int b) {
+		bal = b;
+	}
+	
+	public void paintComponent(Graphics g)
+    {  
+      Graphics2D g2 = (Graphics2D) g;
+      die1.draw(g2);
+      die2.draw(g2);
+      g2.setColor(Color.BLACK);
+      Font font = new Font("SansSerif", Font.PLAIN, 15);
+      g2.setFont(font);
+      g2.drawString("Balance = £" + bal, 300, 340);
+    }
+	
+}

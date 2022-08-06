@@ -1,0 +1,9 @@
+package projectAG;
+
+public class Noun {
+	
+	private String noun;
+	private String translation;
+	private boolean isFeminine;
+
+}

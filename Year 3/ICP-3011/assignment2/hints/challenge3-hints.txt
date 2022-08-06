@@ -1,0 +1,18 @@
+Hint 1
+Take a look at the editprofile.gtl page that users and administrators use to edit profile settings.
+If you’re not an administrator, the page looks a bit different. Can you figure out how to fool
+Gruyere into letting you use this page to update your account?
+
+Hint 2
+Can you figure out how to fool Gruyere into thinking you used this page to update your
+account?
+
+
+Hint 1
+You don’t need to look at the Gruyere cookie parsing code. You just need to know what the
+cookies look like. Gruyere’s cookies use the format:
+hash|username|admin|author
+
+Hint 2
+Gruyere issues a cookie when you log in. Can you trick it into issuing you a cookie that looks
+like another user’s cookie?

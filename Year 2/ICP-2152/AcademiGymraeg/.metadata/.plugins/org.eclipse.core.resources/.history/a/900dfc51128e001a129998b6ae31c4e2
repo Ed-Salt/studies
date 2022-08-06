@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Welcome</title>
+</head>
+<body>
+<h1>Welcome to Academi Gymraeg</h1>
+<form action="TestServlet" method="post">
+<br/>Test your knowledge on Welsh nouns
+<input type="submit" value="Take a test" />
+</form>
+<form action="NounServlet" method="post">
+<br/>Add, remove or edit our list of nouns
+<input type="submit" value="View nouns" />
+</form>
+</body>
+</html>

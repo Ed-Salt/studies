@@ -1,0 +1,51 @@
+html, body {
+    background-color:#FC5;
+    text-align:center;
+}
+
+html {
+    background-image:URL("");    
+}
+
+header {
+    font-size:24px;
+}
+
+nav {
+    background-color:orange;
+}
+
+article {
+    background-color:#FF4;
+    text-align:center;
+    padding:5px;
+    margin-right:350px;
+    margin-left:350px;
+}
+
+aside {
+    background-color:#FA3;
+    float:left;
+    text-align:left;
+    margin:40px;
+    border:40px;
+    padding:20px;
+}
+
+body {
+    background-color:transparent !important;
+}
+
+h1 {
+    color:#9f02d8;
+}
+
+h2 {
+    color:#999;
+}
+
+footer {
+	background-color:brown;
+	color:black;
+    margin-top:20px;
+}

@@ -1,0 +1,109 @@
+
+<X3D>
+  	<Scene>
+  		<Transform translation='-2.5 0 0'>
+   			<Shape>
+      			<Cylinder size='9 3 6'/>
+     			<Appearance>
+      		  		<Material/>
+      			</Appearance>
+    		</Shape>
+   		</Transform>
+   		<Transform translation='-2.5 1 0'>
+   			<Shape>
+      			<Sphere size='9 3 6'/>
+     			<Appearance>
+      		  		<Material/>
+      			</Appearance>
+    		</Shape>
+   		</Transform>
+   		<Transform translation='-2.5 -1 0'>
+   			<Shape>
+      			<Sphere size='9 3 6'/>
+     			<Appearance>
+      		  		<Material/>
+      			</Appearance>
+    		</Shape>
+   		</Transform>
+   		<Transform translation='2.5 0 0' rotation='1 0 0 22'>
+   			<Shape>
+   				<Cone size='2 2 2'/>
+   				<Appearance>
+   					<Material/>
+   				</Appearance>
+   			</Shape>
+   		</Transform>
+   		<Transform translation='2.5 1.23 0'>
+   			<Shape>
+   				<Sphere size='1 1 1'/>
+   				<Appearance>
+   					<Material/>
+   				</Appearance>
+   			</Shape>
+   		</Transform>
+   		<Transform translation='0 0 -2.5'>
+   			<Shape>
+   				<Sphere size='8 8 8'/>
+   				<Appearance>
+   					<Material/>
+   				</Appearance>
+   			</Shape>
+   		</Transform>
+   		<Transform translation='0 -0.5 -2.5'>
+   			<Shape>
+   				<Cone size='8 8 8'/>
+   				<Appearance>
+   					<Material/>
+   				</Appearance>
+   			</Shape>
+   		</Transform>
+   		<Transform translation='0 0.5 -2.5' rotation='1 0 0 22'>
+   			<Shape>
+   				<Cone size='8 8 8'/>
+   				<Appearance>
+   					<Material/>
+   				</Appearance>
+   			</Shape>
+   		</Transform>
+   		<Transform translation='0 0 2.5'>
+   			<Shape>
+   				<Box size='1.8 0.9 1.8'/>
+   				<Appearance>
+   					<Material/>
+   				</Appearance>
+			</Shape>
+		</Transform>
+		<Transform translation='0 0 2.5'>
+   			<Shape>
+   				<Box size='1.8 1.8 0.9'/>
+   				<Appearance>
+   					<Material/>
+   				</Appearance>
+			</Shape>
+		</Transform>
+		<Transform translation='0 0 2.5'>
+   			<Shape>
+   				<Box size='0.9 1.8 1.8'/>
+   				<Appearance>
+   					<Material/>
+   				</Appearance>
+			</Shape>
+		</Transform>
+		<Transform translation='0 0 2.5'>
+   			<Shape>
+   				<Sphere size='0.5 1 1'/>
+   				<Appearance>
+   					<Material/>
+   				</Appearance>
+			</Shape>
+		</Transform>
+		<Transform translation='0 5 0'>
+			<Shape>
+				<Sphere size='1 1 1'/>
+				<Appearance>
+					<Material/>
+				</Appearance>
+			</Shape>
+		</Transform>
+  	</Scene>
+</X3D>

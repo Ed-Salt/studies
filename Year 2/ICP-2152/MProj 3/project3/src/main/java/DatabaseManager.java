@@ -1,0 +1,107 @@
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.LinkedList;
+import java.util.List;
+
+public class DatabaseManager {
+	
+	InputStream stream;
+	Statement st;
+	
+	public DatabaseManager() throws ClassNotFoundException, IOException, SQLException {
+		// Initialise data source using properties file
+		stream =
+				DatabaseManager.class.getResourceAsStream("/database.properties");
+		SimpleDataSource.init(stream);
+		Connection conn = SimpleDataSource.getConnection();
+		st = conn.createStatement();
+	}
+	
+	public void updateEntry(String table, String key, String entryName, String entry) throws SQLException {
+		try
+		{
+			String command = "UPDATE " +table+ " SET "
+					+ entryName + " = ";
+			if (entryName.equals("credits")) { 
+				command = command + Integer.parseInt(entry);
+			} else {
+				command = command + "\"" + entry + "\"";
+			}
+			command = command +" WHERE ";
+			if (!table.equals("registration") && !table.equals("teaches"))  
+				command = command + table;
+			else if (table.equals("registration")) 
+				command = command +"student";
+			else if (table.equals("teaches"))
+				command = command +"staff";
+			command = command +"_id = \""+key+"\";";
+			st.execute(command);
+		} finally {
+			
+		}
+	}
+	
+	public void delFromTable(String table, String key) throws SQLException {
+		try
+		{
+			String command = "DELETE FROM " +table+ " WHERE ";
+			if (!table.equals("registration") && !table.equals("teaches")) 
+				command = command + table;
+			else if (table.equals("registration")) 
+				command = command +"student";
+			else if (table.equals("teaches"))
+				command = command +"staff";
+			command = command +"_id = \""+key+"\";";
+			st.execute(command);
+		} finally {
+			
+		}
+	}
+	
+	public void addToTable(String table, String par1, String par2, String par3) throws SQLException {
+		try
+		{
+			String command = "INSERT INTO " + table;
+			if (table.equals("student")) { 
+				command = command +"("+table+"_id, "+table+"_name, degree_scheme)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "', '" +par3+ "');";
+			} else if (table.equals("staff")){ 
+				command = command +"("+table+"_id, "+table+"_name, staff_grade)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "', '" +par3+ "');";
+			} else if (table.equals("module")) {
+				command = command +"("+table+"_id, "+table+"_name, credits)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "', '" +Integer.parseInt(par3)+ "');";
+			} else if (table.equals("registration")) {
+				command = command +"(student_id, module_id)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "');";
+			} else if (table.equals("teaches")) {
+				command = command +"(staff_id, module_id)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "');";
+			}
+			st.execute(command);
+		} finally {
+			
+		}
+	}
+	
+	public List<String> getTable(String table, String query) throws SQLException {
+		ResultSet rs = st.executeQuery(query);
+		List<String> entries = new LinkedList<String>();
+		int count;
+		if (!table.equals("registration") && !table.equals("teaches"))
+			count = 3;
+		else
+			count = 2;
+		while(rs.next()) {
+			for (int i = 1; i <= count; i++) {
+				entries.add(rs.getString(i));
+			}
+		}
+		return entries;
+	}
+	
+}

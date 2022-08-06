@@ -1,0 +1,31 @@
+package project3;
+
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.Statement;
+
+public class CommandLineInterface {
+
+	public static void main(String[] args) {
+		System.out.println("\nMain Menu"
+				+ "\n********************"
+				+ "\n1. List student"
+				+ "\n2. List staff"
+				+ "\n3. List modules"
+				+ "\n4. List registrations"
+				+ "\n5. List courses taught by staff"
+				+ "\n6. Add student"
+				+ "\n7. Delete student"
+				+ "\n8. Update student"
+				+ "\n9. Reports"
+				+ "\n0. Quit");
+		InputStream stream =
+				SQLTester.class.getResourceAsStream("/database.properties");
+		SimpleDataSource.init(stream);
+		Connection conn = SimpleDataSource.getConnection();
+
+		Statement st = conn.createStatement();
+
+	}
+
+}

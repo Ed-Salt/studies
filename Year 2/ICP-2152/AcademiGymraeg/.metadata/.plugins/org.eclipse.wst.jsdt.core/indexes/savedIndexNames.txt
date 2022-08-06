@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+G:\Documents\CS\ICP-2152\AcademiGymraeg\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2693169555.index
+2027173504.index
+1788025650.index
+2368164209.index
+1369045349.index
+4074136948.index
+3036545310.index

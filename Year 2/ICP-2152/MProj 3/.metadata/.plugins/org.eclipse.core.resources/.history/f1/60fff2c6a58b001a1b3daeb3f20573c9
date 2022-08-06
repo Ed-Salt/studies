@@ -1,0 +1,80 @@
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class DatabaseManager {
+	
+	InputStream stream;
+	Statement st;
+	
+	public DatabaseManager() throws ClassNotFoundException, IOException, SQLException {
+		// Initialise data source using properties file
+		stream =
+				DatabaseManager.class.getResourceAsStream("/database.properties");
+		SimpleDataSource.init(stream);
+		Connection conn = SimpleDataSource.getConnection();
+		st = conn.createStatement();
+	}
+	
+	public void updateEntry(String table, String entryName, String entry, String key) {
+		try
+		{
+			String command = "UPDATE " +table+ " SET "
+					+ entryName + " = ";
+			if (entryName.equals("credits")) { 
+				command = command + entry;
+			} else {
+				command = command + "\"" + entry + "\"";
+			}
+			command = command +"_id = \""+key+"\";";
+			st.execute(command);
+		} finally {
+			
+		}
+	}
+	
+	public void delFromTable(String table, String key) throws SQLException {
+		try
+		{
+			String command = "DELETE FROM " +table+ " WHERE ";
+			if (table.equals("student") || table.equals("module")) { 
+				command = command + table;
+			} else if (table.equals("registration")) {
+				command = command +"student";
+			}
+			command = command +"_id = \""+key+"\";";
+			st.execute(command);
+		} finally {
+			
+		}
+	}
+	
+	public void addToTable(String table, String par1, String par2, String par3) throws SQLException {
+		try
+		{
+			String command = "INSERT INTO " + table;
+			if (table.equals("student")) { 
+				command = command +"("+table+"_id, "+table+"_name, degree_scheme)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "', '" +par3+ "');";
+			} else if (table.equals("module")) {
+				command = command +"("+table+"_id, "+table+"_name, credits)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "', '" +par3+ "');";
+			} else if (table.equals("registration")) {
+				command = command +"(student_id, module_id)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "');";
+			}
+			st.execute(command);
+		} finally {
+			
+		}
+	}
+	
+	public ResultSet getTable(String query) throws SQLException {
+		ResultSet rs = st.executeQuery(query);
+		return rs;
+	}
+	
+}

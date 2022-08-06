@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+G:\Documents\CS\ICP-2152\Tut 1\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3695064630.index
+2144911878.index
+1677135834.index
+3181951865.index
+3730317963.index
+2481388144.index

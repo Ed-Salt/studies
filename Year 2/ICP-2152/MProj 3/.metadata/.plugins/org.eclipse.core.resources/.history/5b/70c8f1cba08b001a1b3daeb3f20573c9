@@ -1,0 +1,67 @@
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class DatabaseManager {
+	
+	InputStream stream;
+	Statement st;
+	
+	public DatabaseManager() throws ClassNotFoundException, IOException, SQLException {
+		// Initialise data source using properties file
+		stream =
+				DatabaseManager.class.getResourceAsStream("/database.properties");
+		SimpleDataSource.init(stream);
+		Connection conn = SimpleDataSource.getConnection();
+		st = conn.createStatement();
+	}
+	
+	public void delFromTable(String table, String key) throws SQLException {
+		try
+		{
+			String command = "";
+			if (table.equals("student")) { 
+				command = "INSERT INTO "+table+"("+table+"_id, "+table+"_name, degree_scheme)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "', '" +par3+ "');";
+			} else if (table.equals("module")) {
+				command = "INSERT INTO "+table+"("+table+"_id, "+table+"_name, credits)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "', '" +par3+ "');";
+			} else if (table.equals("registration")) {
+				command = "INSERT INTO "+table+"(student_id, module_id)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "');";
+			}
+			st.execute(command);
+		} finally {
+			
+		}
+	}
+	
+	public void addToTable(String table, String par1, String par2, String par3) throws SQLException {
+		try
+		{
+			String command = "";
+			if (table.equals("student")) { 
+				command = "INSERT INTO "+table+"("+table+"_id, "+table+"_name, degree_scheme)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "', '" +par3+ "');";
+			} else if (table.equals("module")) {
+				command = "INSERT INTO "+table+"("+table+"_id, "+table+"_name, credits)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "', '" +par3+ "');";
+			} else if (table.equals("registration")) {
+				command = "INSERT INTO "+table+"(student_id, module_id)" + 
+						"VALUE ('" +par1+ "', '" +par2+ "');";
+			}
+			st.execute(command);
+		} finally {
+			
+		}
+	}
+	
+	public ResultSet getTable(String query) throws SQLException {
+		ResultSet rs = st.executeQuery(query);
+		return rs;
+	}
+	
+}

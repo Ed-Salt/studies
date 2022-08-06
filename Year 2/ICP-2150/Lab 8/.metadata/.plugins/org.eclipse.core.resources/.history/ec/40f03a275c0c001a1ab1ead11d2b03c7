@@ -1,0 +1,13 @@
+import java.awt.*;
+import java.awt.geom.Ellipse2D;
+import java.util.Random;
+import javax.swing.*;
+
+public class BallThreads extends JComponent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

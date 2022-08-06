@@ -1,0 +1,137 @@
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JRadioButton;
+import javax.swing.JFrame;
+
+public class DiceViewer {
+	
+	private static int sides = 6;
+	private static int diceSize = 160;
+	private static int leftDice = 100;
+	private static int rightDice = 444;
+	private static int yPos = 80;
+	private static int roll1 = 6;
+	private static int roll2 = 6;
+	private static String mode = "";
+	private static int bet = 1;
+	private static int bal = 50;
+	
+	
+	public static void main(String[] args) {	
+		//construct frame
+		JFrame frame = new JFrame();
+		frame.setSize(720, 450);
+		frame.getContentPane().setSize(700, 400);
+		frame.setTitle("Dice");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//construct dice
+		Dice d1 = new Dice(sides);
+		Dice d2 = new Dice(sides);
+		d1.setValue(roll1);
+		d2.setValue(roll2);
+		DiceFace die1 = new DiceFace(diceSize, leftDice, yPos, d1.getValue(), Color.BLACK);
+		DiceFace die2 = new DiceFace(diceSize, rightDice, yPos, d2.getValue(), Color.RED);
+		DiceComponent dice = new DiceComponent(die1, die2);
+		
+		//construct button
+		JButton btnThrow = new JButton("Throw dice");
+		btnThrow.setSize(160, 50);
+		btnThrow.setLocation(420, 314);
+		//construct button listener
+		ActionListener btnListener = (new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+				System.out.println("Clicked Button!");
+				roll1 = d1.throwDice();
+				roll2 = d2.throwDice();
+				die1.setDiceFace(roll1);
+				die2.setDiceFace(roll2);
+				int total = roll1 + roll2;
+				System.out.println(total);
+				if ((mode == "High" && total > 7) 
+					|| (mode == "Low" && total < 7)) {
+					System.out.println("Winner!");
+					bal += bet;
+				}
+				else if (mode == "Sevens" && total == 7) {
+					System.out.println("Winner!");
+					bal += bet*4;
+				}
+				else {
+					System.out.println("Loser!");
+					bal -= bet;
+				}
+				System.out.println("Balance: " + bal);
+		 		frame.repaint();
+		    }
+		});		   		   
+		btnThrow.addActionListener(btnListener);
+		btnThrow.setEnabled(false);
+		
+		//construct radio buttons
+		JRadioButton[] rdbType = new JRadioButton[3];
+		for (int i = 0; i < 3; i++) {
+			rdbType[i] = new JRadioButton();
+			rdbType[i].setSize(80, 40);
+			rdbType[i].setLocation(120, 290+(i*30));
+		}
+		rdbType[0].setText("High");
+		rdbType[1].setText("Low");
+		rdbType[2].setText("Sevens");
+		//construct radio button listeners
+		ActionListener radListener = (new ActionListener()
+		   {
+		     public void actionPerformed(ActionEvent e)
+		     {
+		    	System.out.println("Clicked Radio!");
+		    	for (int i = 0; i < 3; i++) {
+		    		rdbType[i].setSelected(false);
+		    	}
+		    	JRadioButton select = (JRadioButton) e.getSource();;
+		    	select.setSelected(true);
+		    	mode = select.getText();
+			    btnThrow.setEnabled(true);
+			    System.out.println("Mode: " + mode);
+		     }
+		   });		
+		for (int i = 0; i < 3; i++) {
+			rdbType[i].addActionListener(radListener);
+		}
+		
+		//construct combo box
+		String[] bets = {"£1", "£5", "£10"};
+		JComboBox<String> cmbBet = new JComboBox<String>(bets);
+		cmbBet.setSize(60, 20);
+		cmbBet.setLocation(220, 330);
+		//construct radio button listeners
+		ActionListener cmbListener = (new ActionListener()
+		   {
+		     public void actionPerformed(ActionEvent e)
+		     {
+		    	System.out.println("Clicked Combo!");
+		    	bet = Integer.parseInt(
+		    			cmbBet.getSelectedItem().toString().substring(1));
+		    	System.out.println("Bet: " + bet);
+		     }
+		   });		
+		cmbBet.addActionListener(cmbListener);
+		
+		//
+		
+		//add frame components
+		frame.add(cmbBet);
+		for (int i = 0; i < 3; i++) {
+			frame.add(rdbType[i]);
+		}
+		frame.add(btnThrow);
+		frame.add(dice);
+		frame.setVisible(true);
+	}
+
+}

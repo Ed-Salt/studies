@@ -1,0 +1,10 @@
+package projectAG;
+
+public class Noun {
+	
+	private String noun;
+	private enum gender{
+		masculine, feminine;
+	}
+
+}

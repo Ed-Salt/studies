@@ -1,0 +1,14 @@
+﻿  Checking Build System
+  CMake is re-running because G:/Documents/CS/ICP-3038/Lab-12/bin/CMakeFiles/generate.stamp is out-of-date.
+    the file 'G:/Documents/CS/ICP-3038/Lab-12/CMakeLists.txt'
+    is newer than 'G:/Documents/CS/ICP-3038/Lab-12/bin/CMakeFiles/generate.stamp.depend'
+    result='-1'
+  -- Selecting Windows SDK version 10.0.18362.0 to target Windows 10.0.18363.
+  -- OpenCV ARCH: x64
+  -- OpenCV RUNTIME: vc15
+  -- OpenCV STATIC: OFF
+  -- Found OpenCV 4.5.0 in C:/opencv/build/x64/vc15/lib
+  -- You might need to add C:\opencv\build\x64\vc15\bin to your PATH to be able to run your applications.
+  -- Configuring done
+  -- Generating done
+  -- Build files have been written to: G:/Documents/CS/ICP-3038/Lab-12/bin

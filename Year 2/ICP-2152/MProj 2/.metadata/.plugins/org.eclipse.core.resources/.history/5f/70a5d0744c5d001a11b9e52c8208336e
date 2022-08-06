@@ -1,0 +1,17 @@
+
+import java.util.Date;
+import java.util.List;
+
+public interface WeatherRSSParser {
+	
+	String getHeadlines() throws IllegalArgumentException;
+	
+	List<Date> getDates();
+	
+	void setURL(String nURL);
+
+	String getGeoId(String location) throws IllegalArgumentException;
+
+	String getDescription() throws IllegalArgumentException;
+
+}

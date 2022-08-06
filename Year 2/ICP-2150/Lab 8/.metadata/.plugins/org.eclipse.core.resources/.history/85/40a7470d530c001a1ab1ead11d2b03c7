@@ -1,0 +1,14 @@
+import javax.swing.Timer;
+
+public class AnimatedBall {
+	
+	final static int DELAY = 200;
+	
+	public static void main(String[] args) {
+		// Create listener and attach it to the timer
+		TimerListener listener = new TimerListener();
+		Timer t = new Timer(DELAY, listener);
+		// Start timer running
+		t.start();
+	}
+}

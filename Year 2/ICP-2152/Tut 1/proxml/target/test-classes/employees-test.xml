@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8""?>
+<Employees>
+	<Employee ID="1">
+		<FirstName>Lebron</FirstName>
+		<LastName>James</LastName>
+		<Age>30</Age>
+		<Salary>2500</Salary>
+	</Employee>
+	<Employee ID="2">
+		<FirstName>Anthony</FirstName>
+		<LastName>Davis</LastName>
+		<Age>22</Age>
+		<Salary>1500</Salary>
+	</Employee>
+	<Employee ID="3">
+		<FirstName>Lewis</FirstName>
+		<LastName>Dixon</LastName>
+		<Age>19</Age>
+		<Salary>50</Salary>
+	</Employee>
+</Employees>

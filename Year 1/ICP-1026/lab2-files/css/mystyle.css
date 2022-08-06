@@ -1,0 +1,51 @@
+html {
+	background: grey;
+	font-family:sans-serif;
+	font-size: 14px;
+}
+
+.button {
+	background: orange;
+	float: right;
+	margin: 5px;
+	padding: 3px;
+	box-shadow: 0 0 0 2px;
+}
+
+.button:hover {
+	background: gold;
+	box-shadow: 0 0 0 2px lightgrey;
+	/* testing for button click */
+	galleryItems.background: white;
+}
+
+galleryItems {
+	background: darkgrey;
+	width: 328px;
+	height: 202px;
+	float: left;
+	margin: 44px;
+	box-shadow: 5px 5px 10px;
+}
+
+h1 {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+img {
+	width: 288px;
+	height: 162px;
+	margin: 20px;
+	margin-top: 5px;
+	background-color: white;
+    display: inline-block;
+}
+
+galleryItems:hover {
+    background: lightgrey;
+    box-shadow: 5px 5px 7px #9b9b9b;
+}
+
+.button:click {
+}

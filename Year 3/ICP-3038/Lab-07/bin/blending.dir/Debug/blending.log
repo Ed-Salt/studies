@@ -1,0 +1,17 @@
+﻿  Image.cxx
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(305,24): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(353,36): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(456,87): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(811,91): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(823,15): warning C4244: 'initializing': conversion from 'const size_t' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(824,15): warning C4244: 'initializing': conversion from 'const size_t' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(843,15): warning C4244: 'initializing': conversion from 'const size_t' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(844,15): warning C4244: 'initializing': conversion from 'const size_t' to 'float', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(852,106): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(852,103): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(852,154): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(852,151): warning C4244: 'argument': conversion from 'float' to 'size_t', possible loss of data
+G:\Documents\CS\ICP-3038\Lab-07\src\Image.cxx(981,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  blending.cxx
+  Generating Code...
+  blending.vcxproj -> G:\Documents\CS\ICP-3038\Lab-07\bin\Debug\blending.exe

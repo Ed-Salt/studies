@@ -1,0 +1,20 @@
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Ellipse2D.Double;
+
+import javax.swing.JFrame;
+import javax.swing.Timer;
+
+public class AnimatedBall {
+	
+	final static int DELAY = 200;
+	
+	public static void main(String[] args) {
+		// Create listener and attach it to the timer
+		TimerListener listener = new TimerListener();
+		Timer t = new Timer(DELAY, listener);
+		// Start timer running
+		t.start();
+		JFrame frame = new JFrame();
+		Ellipse2D.Double ball = new Ellipse2D.Double(20, 20, 20, 20);
+	}
+}

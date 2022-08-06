@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static void runQuery(Statement stmt) throws SQLException &apos; from &apos;JDBCConnection.main()&apos; to &apos;JDBCConnection&apos;&#x0D;&#x0A;- Original project: &apos;jdbc-dbstructures&apos;&#x0D;&#x0A;- Method name: &apos;runQuery&apos;&#x0D;&#x0A;- Destination type: &apos;JDBCConnection&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;runQuery&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src\/main\/java&lt;{JDBCConnection.java" name="runQuery" replace="false" selection="673 238" stamp="1588172623500" version="1.0" visibility="2"/>
+</session>

@@ -1,0 +1,65 @@
+import java.net.*;
+import java.io.*;
+import java.util.*;
+
+public class ChatServer
+{  
+   private Socket socket;  
+   private ServerSocket server;
+   
+   public ChatServer(int port) throws IOException{
+	  try
+	  {          
+	      server = new ServerSocket(port);  
+	      System.out.println("Server started: " + server);
+	      System.out.println("Waiting for connection ..."); 
+	      socket = server.accept();
+	      System.out.println("Socket created: " + socket);
+	      
+	      // Get streams
+	   		InputStream in = socket.getInputStream( );
+	   		OutputStream out = socket.getOutputStream( );
+	   		
+	   		// Turn streams into readers and writers
+	   		Scanner reader 
+	 			= new Scanner(in);
+	   			
+  			PrintWriter writer 
+   				= new PrintWriter(out);      
+	   		 	   			
+   			// Read and display server response
+   			// Terminate when end of file
+  			String input = "";
+   			while (!input.equals(".bye"))
+   			{
+   				input = reader.nextLine( );
+   			    System.out.println(input);
+   			   
+   			}
+	      
+	  }
+	  catch(IOException e) 
+	  { 
+		  System.out.println(e); 
+	  }
+	  finally
+	  {
+		  socket.close();
+		  System.out.println("Connection closed ...");
+	  }
+   }
+   
+   public static void main(String args[]) throws IOException
+   {  
+      ChatServer server;
+
+      if (args.length != 1)
+         System.out.println(
+   		"Usage: java ChatServer port");
+      else
+      {
+       	int port = Integer.parseInt(args[0]);
+       	server = new ChatServer(port);
+      }
+   }
+}

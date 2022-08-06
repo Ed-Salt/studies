@@ -1,0 +1,50 @@
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class DatabaseManager {
+	
+	InputStream stream;
+	Statement st;
+	
+	public DatabaseManager() throws ClassNotFoundException, IOException, SQLException {
+		// Initialise data source using properties file
+		stream =
+				DatabaseManager.class.getResourceAsStream("/database.properties");
+		SimpleDataSource.init(stream);
+		Connection conn = SimpleDataSource.getConnection();
+		st = conn.createStatement();
+	}
+	
+	public boolean delStudent(String id) throws SQLException {
+		boolean confirm = false;
+		try
+		{
+			String command = ";";
+			confirm = st.execute(command);
+		} finally {
+			
+		}
+		return confirm;
+	}
+	
+	public void addToTable(String table, String id, String name, String degree) throws SQLException {
+		try
+		{
+			String command = "INSERT INTO student(student_id, student_name, degree_scheme)" + 
+					"VALUE ('" +id+ "', '" +name+ "', '" +degree+ "');";
+			st.execute(command);
+		} finally {
+			
+		}
+	}
+	
+	public ResultSet getTable(String query) throws SQLException {
+		ResultSet rs = st.executeQuery(query);
+		return rs;
+	}
+	
+}

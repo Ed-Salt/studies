@@ -1,0 +1,13 @@
+import java.io.IOException;
+import java.sql.SQLException;
+
+public class DatabaseMain {
+
+	public static void main(String[] args) throws IOException, SQLException, ClassNotFoundException, IOException {
+		int input = -1;
+		while (input != 0) {
+			new DatabaseTextInterface();
+		}
+	}
+
+}

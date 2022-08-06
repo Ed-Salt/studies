@@ -1,0 +1,7 @@
+Hint 1
+You can run a script from another domain by adding
+<SCRIPT src="https://google-gruyere.appspot.com/123/..."></SCRIPT>
+to your HTML file. What scripts does Gruyere have?
+
+Hint 2
+feed.gtl is a script. Given that, how can you get the private snippet out of the script?

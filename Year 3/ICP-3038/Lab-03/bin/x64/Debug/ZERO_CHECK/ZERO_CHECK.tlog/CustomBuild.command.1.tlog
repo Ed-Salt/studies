@@ -1,0 +1,10 @@
+^G:\DOCUMENTS\CS\ICP-3038\LAB-03\BIN\CMAKEFILES\02D20B869F211DB38BC836D289E068CB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Documents/CS/ICP-3038/Lab-03 -BG:/Documents/CS/ICP-3038/Lab-03/bin --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file G:/Documents/CS/ICP-3038/Lab-03/bin/ICP3038-lab3.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

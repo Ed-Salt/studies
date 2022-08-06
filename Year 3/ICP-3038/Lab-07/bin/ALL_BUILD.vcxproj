@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{49CA992C-9A0E-377A-8206-0BCF8CEC49B5}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="G:\Documents\CS\ICP-3038\Lab-07\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule G:/Documents/CS/ICP-3038/Lab-07/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Documents/CS/ICP-3038/Lab-07 -BG:/Documents/CS/ICP-3038/Lab-07/bin --check-stamp-file G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\ExternalProject-download.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeCCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeSystem.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\tmp\googletest-cfgcmd.txt.in;G:\Documents\CS\ICP-3038\Lab-07\cmake\External_GTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule G:/Documents/CS/ICP-3038/Lab-07/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Documents/CS/ICP-3038/Lab-07 -BG:/Documents/CS/ICP-3038/Lab-07/bin --check-stamp-file G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\ExternalProject-download.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeCCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeSystem.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\tmp\googletest-cfgcmd.txt.in;G:\Documents\CS\ICP-3038\Lab-07\cmake\External_GTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule G:/Documents/CS/ICP-3038/Lab-07/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Documents/CS/ICP-3038/Lab-07 -BG:/Documents/CS/ICP-3038/Lab-07/bin --check-stamp-file G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\ExternalProject-download.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeCCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeSystem.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\tmp\googletest-cfgcmd.txt.in;G:\Documents\CS\ICP-3038\Lab-07\cmake\External_GTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule G:/Documents/CS/ICP-3038/Lab-07/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SG:/Documents/CS/ICP-3038/Lab-07 -BG:/Documents/CS/ICP-3038/Lab-07/bin --check-stamp-file G:/Documents/CS/ICP-3038/Lab-07/bin/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\ExternalProject-download.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\ExternalProject.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\RepositoryInfo.txt.in;C:\opencv\build\OpenCVConfig-version.cmake;C:\opencv\build\OpenCVConfig.cmake;C:\opencv\build\x64\vc15\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules-release.cmake;C:\opencv\build\x64\vc15\lib\OpenCVModules.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeCCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeCXXCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeRCCompiler.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\3.18.3\CMakeSystem.cmake;G:\Documents\CS\ICP-3038\Lab-07\bin\tmp\googletest-cfgcmd.txt.in;G:\Documents\CS\ICP-3038\Lab-07\cmake\External_GTest.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">G:\Documents\CS\ICP-3038\Lab-07\bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\ZERO_CHECK.vcxproj">
+      <Project>{697515C7-94F6-32B7-9F35-F82966489163}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\blending.vcxproj">
+      <Project>{87BBDB45-6EE6-3E1A-8FE6-C25FEAF632FA}</Project>
+      <Name>blending</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\boxFilter.vcxproj">
+      <Project>{E43704FC-1B38-3239-87F3-76F4585C810C}</Project>
+      <Name>boxFilter</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\contrastEnhancement.vcxproj">
+      <Project>{9B9766D2-07A7-3A96-9CAA-BEC4AE119969}</Project>
+      <Name>contrastEnhancement</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\display.vcxproj">
+      <Project>{1F421541-D816-364A-9943-5806457D1854}</Project>
+      <Name>display</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\gaussianFilter.vcxproj">
+      <Project>{F3599C46-DADC-3843-9A59-18BB0BC0C34E}</Project>
+      <Name>gaussianFilter</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\googletest.vcxproj">
+      <Project>{42B29A6F-9023-3AA5-942E-C264C5DAF2DB}</Project>
+      <Name>googletest</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\gradientMagnitude.vcxproj">
+      <Project>{BD3A9028-51CD-398D-8520-3FDDBD2A484B}</Project>
+      <Name>gradientMagnitude</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\laplacianFilter.vcxproj">
+      <Project>{5B196085-E6F1-3D72-8D2D-FDCE12763EBA}</Project>
+      <Name>laplacianFilter</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\negative.vcxproj">
+      <Project>{BA331590-361B-3195-95AB-295A4E7C5108}</Project>
+      <Name>negative</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\sharpen.vcxproj">
+      <Project>{E7609685-A1C9-37EF-A35B-C212B994A3A7}</Project>
+      <Name>sharpen</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\test-constructors.vcxproj">
+      <Project>{93C0BCA1-FDCD-386D-A15D-33FB9F028A68}</Project>
+      <Name>test-constructors</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\test-load-save.vcxproj">
+      <Project>{7AB1BBE2-6BBB-3449-A1BC-DAEFED39CC57}</Project>
+      <Name>test-load-save</Name>
+    </ProjectReference>
+    <ProjectReference Include="G:\Documents\CS\ICP-3038\Lab-07\bin\test-operators.vcxproj">
+      <Project>{386A9868-82C0-3A67-A654-D179BB2F96C3}</Project>
+      <Name>test-operators</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

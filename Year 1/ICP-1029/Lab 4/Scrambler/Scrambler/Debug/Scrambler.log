@@ -1,0 +1,6 @@
+﻿  Scrambler.cpp
+c:\users\salte\documents\cs\icp-1029\lab 4\scrambler\scrambler\scrambler.cpp(40): warning C4473: 'scanf_s' : not enough arguments passed for format string
+  c:\users\salte\documents\cs\icp-1029\lab 4\scrambler\scrambler\scrambler.cpp(40): note: placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+  c:\users\salte\documents\cs\icp-1029\lab 4\scrambler\scrambler\scrambler.cpp(40): note: the missing variadic argument 2 is required by format string '%c'
+  c:\users\salte\documents\cs\icp-1029\lab 4\scrambler\scrambler\scrambler.cpp(40): note: this argument is used as a buffer size
+  Scrambler.vcxproj -> C:\Users\salte\Documents\CS\ICP-1029\Lab 4\Scrambler\Debug\Scrambler.exe
